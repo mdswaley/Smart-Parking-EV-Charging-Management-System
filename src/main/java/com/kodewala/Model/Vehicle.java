@@ -11,7 +11,6 @@ public abstract class Vehicle {
         this.ownerName = ownerName;
     }
 
-    public Vehicle(){}
 
     public String getVehicleNumber() {
         return vehicleNumber;
