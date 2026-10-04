@@ -21,4 +21,8 @@ public class EVParkingSlot extends ParkingSlot{
     private double calculatingChargingCost(double units){
         return units * chargingRate;
     }
+
+    public double getChargingRate(){
+        return chargingRate;
+    }
 }
