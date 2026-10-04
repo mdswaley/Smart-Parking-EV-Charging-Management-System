@@ -1,5 +1,7 @@
 package com.kodewala.Model;
 
+import com.kodewala.Enums.VehicleType;
+
 public abstract class Vehicle {
     private String vehicleNumber;
     private String ownerName;
@@ -26,6 +28,8 @@ public abstract class Vehicle {
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
+
+    public abstract VehicleType getVehicleType();
 
     public abstract double getBaseParkingRate();
 }
