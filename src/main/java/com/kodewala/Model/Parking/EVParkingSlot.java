@@ -1,5 +1,6 @@
 package com.kodewala.Model.Parking;
 
+import com.kodewala.Enums.SlotType;
 import com.kodewala.Model.ElectricCar;
 import com.kodewala.Model.Vehicle;
 
@@ -8,7 +9,7 @@ public class EVParkingSlot extends ParkingSlot{
     private final double chargingRate;
 
     public EVParkingSlot(String slotNumber, double chargingRate) {
-        super(slotNumber);
+        super(slotNumber, SlotType.EV_CHARGING);
         this.chargingRate = chargingRate;
     }
 
