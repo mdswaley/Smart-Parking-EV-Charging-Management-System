@@ -1,5 +1,6 @@
 package com.kodewala.Service;
 
+import com.kodewala.Exception.ParkingFullException;
 import com.kodewala.Model.Parking.ParkingSlot;
 import com.kodewala.Model.Vehicle;
 
@@ -19,7 +20,7 @@ public class ParkingService {
             }
         }
 
-        throw new RuntimeException("No suitable parking slot available");
+        throw new ParkingFullException("No suitable parking slot available");
     }
 
     public void parkVehicle(Vehicle vehicle) {
