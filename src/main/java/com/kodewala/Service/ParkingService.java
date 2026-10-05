@@ -20,7 +20,7 @@ public class ParkingService {
             }
         }
 
-        throw new ParkingFullException("No suitable parking slot available");
+        throw new ParkingFullException("No suitable parking slot available for " + vehicle.getVehicleNumber());
     }
 
     public void parkVehicle(Vehicle vehicle) {
