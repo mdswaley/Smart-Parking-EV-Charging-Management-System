@@ -18,7 +18,7 @@ public class EVParkingSlot extends ParkingSlot{
         return vehicle instanceof ElectricCar;
     }
 
-    private double calculatingChargingCost(double units){
+    public double calculatingChargingCost(double units){
         return units * chargingRate;
     }
 
